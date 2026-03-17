@@ -26,6 +26,25 @@ app.set('views', './views')
 
 console.log('Let op: Er zijn nog geen routes. Voeg hier dus eerst jouw GET en POST routes toe.')
 
+// Maak een GET route voor de homepagina
+app.get('/', async function (request, response) {
+
+  // Haal de nieuwsdata op uit de database
+  const apiResponse = await fetch('https://fdnd-agency.directus.app/items/adconnect_news')
+
+  // Zet de opgehaalde data om naar JSON
+  const apiResponseJSON = await apiResponse.json()
+
+  // Laat de data zien in de terminal
+  console.log(apiResponseJSON)
+
+  // Pak alleen de array met nieuwsitems uit de JSON
+  const news = apiResponseJSON.data
+
+  // Render index.liquid en geef news mee
+  response.render('index.liquid', { news: news })
+})
+
 /*
 // Zie https://expressjs.com/en/5x/api.html#app.get.method over app.get()
 app.get(…, async function (request, response) {

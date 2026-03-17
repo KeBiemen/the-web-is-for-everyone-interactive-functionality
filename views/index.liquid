@@ -1,0 +1,109 @@
+{% render 'partials/head.liquid'%}
+
+{% render 'partials/header.liquid'%}
+
+    <main>
+      <div class="hero-section">
+        <article class="hero-article">
+        <h1 headingoffset="1">Het landelijke platform voor Associate degrees</h1>
+        <p>
+          Ad-netwerk samen om kennis te delen, samen te werken en de kwaliteit en zichtbaarheid van Associate degrees te
+          versterken.
+        </p>
+       
+       
+        <a class="light-button" href="#todo">Meer over Ad's</a>
+        <a class="dark-button" href="#todo">Kom naar de Ad-dag</a>
+         </article>
+
+         <img class="hero-image" src="styles/assets/image.png" alt="" >
+        </div>
+
+      
+
+      <hr>
+      <a>Het laatste nieuws</a>
+      <hr>
+        {% for item in news %}
+      <ul>
+        
+              <li> <article>
+                <h2>{{ item.title }}</h2>
+                
+          <img src="https://fdnd-agency.directus.app/assets/{{ item.hero }}" alt="Het spel Pionieren!" width="300" height="210">
+               <p>{{ item.description }} </p> </article></li>    
+      </ul>
+        {% endfor %}
+
+      <section class="middle-secion">
+        <h2> <svg width='108' height='69' viewBox='0 0 108 69' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M41.5662 33.7171C46.8967 42.9497 44.0736 54.559 35.2606 59.6471C26.4476 64.7353 14.9821 61.3756 9.65165 52.1429C4.32119 42.9103 7.14432 31.301 15.9573 26.2128C24.7702 21.1247 36.2358 24.4844 41.5662 33.7171Z' fill='#00408D'/><path d='M97.2177 18.2368C103.033 28.3088 99.5818 41.1878 89.5099 47.0028C79.4379 52.8179 66.559 49.367 60.7439 39.295C54.9289 29.223 58.3798 16.3441 68.4517 10.529C78.5237 4.71398 91.4027 8.16489 97.2177 18.2368Z' fill='#E75234'/></svg>
+        Wat zijn Associate degrees en hoe sluit het aan bij jou wensen?</h2>
+        <p>
+          Associate degrees zijn tweejarige hbo-opleidingen die sterk praktijkgericht zijn en direct aansluiten op de
+          arbeidsmarkt. Ze combineren werken en leren en zijn bedoeld voor studenten die zich willen ontwikkelen op
+          hbo-niveau, zonder direct een vierjarige bachelor te volgen. De opleidingen worden samen met het werkveld
+          vormgegeven en spelen in op actuele beroepsvragen. Hierdoor doe je relevante kennis en vaardigheden op die je
+          meteen kunt toepassen in de praktijk. Een Associate degree biedt daarnaast flexibiliteit: je behaalt een
+          zelfstandig diploma en kunt, als je dat wilt, doorstromen naar een bacheloropleiding.
+        </p>
+        <a class="dark-button" href="#todo">Meer info over Ad's</a>
+        
+      </section>
+
+      <section class="section-articles">
+        <h2 class="text-articles">Ontdek het Ad-onderwijs</h2>
+        <p>
+          Leer alles over Associate degrees, doorstroommogelijkheden en netwerkevenementen. Blijf op de hoogte van
+          Ad-opleidingen en activiteiten binnen het overlegplatform.
+        </p>
+
+        <div>
+        <article class="article-info">
+          <h3><svg width='108' height='69' viewBox='0 0 108 69' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M41.5662 33.7171C46.8967 42.9497 44.0736 54.559 35.2606 59.6471C26.4476 64.7353 14.9821 61.3756 9.65165 52.1429C4.32119 42.9103 7.14432 31.301 15.9573 26.2128C24.7702 21.1247 36.2358 24.4844 41.5662 33.7171Z' fill='#00408D'/><path d='M97.2177 18.2368C103.033 28.3088 99.5818 41.1878 89.5099 47.0028C79.4379 52.8179 66.559 49.367 60.7439 39.295C54.9289 29.223 58.3798 16.3441 68.4517 10.529C78.5237 4.71398 91.4027 8.16489 97.2177 18.2368Z' fill='#E75234'/></svg> 
+          Doorstroom Ad</h3>
+          <p>
+            Met een Associate degree stroom je door naar het derde jaar van een bachelor. Zo combineer je praktijk met
+            een diploma.
+          </p>
+          <a class="light-button" href="#todo">Meer over doorstroom Ad's </a>
+        </article>
+
+        <article class="article-info">
+          <h3> <svg width='108' height='69' viewBox='0 0 108 69' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M41.5662 33.7171C46.8967 42.9497 44.0736 54.559 35.2606 59.6471C26.4476 64.7353 14.9821 61.3756 9.65165 52.1429C4.32119 42.9103 7.14432 31.301 15.9573 26.2128C24.7702 21.1247 36.2358 24.4844 41.5662 33.7171Z' fill='#00408D'/><path d='M97.2177 18.2368C103.033 28.3088 99.5818 41.1878 89.5099 47.0028C79.4379 52.8179 66.559 49.367 60.7439 39.295C54.9289 29.223 58.3798 16.3441 68.4517 10.529C78.5237 4.71398 91.4027 8.16489 97.2177 18.2368Z' fill='#E75234'/></svg>
+          Ad-dag</h3>
+          <p>
+            De jaarlijkse Ad-dag brengt studenten, docenten en werkveldpartners samen. Tijdens workshops staat
+            kennisdeling en netwerken centraal.
+          </p>
+          <a class="light-button"  href="#todo">Meer over de Ad-dag </a>
+        </article>
+
+        <article class="article-info">
+          <h3> <svg width='108' height='69' viewBox='0 0 108 69' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M41.5662 33.7171C46.8967 42.9497 44.0736 54.559 35.2606 59.6471C26.4476 64.7353 14.9821 61.3756 9.65165 52.1429C4.32119 42.9103 7.14432 31.301 15.9573 26.2128C24.7702 21.1247 36.2358 24.4844 41.5662 33.7171Z' fill='#00408D'/><path d='M97.2177 18.2368C103.033 28.3088 99.5818 41.1878 89.5099 47.0028C79.4379 52.8179 66.559 49.367 60.7439 39.295C54.9289 29.223 58.3798 16.3441 68.4517 10.529C78.5237 4.71398 91.4027 8.16489 97.2177 18.2368Z' fill='#E75234'/></svg>
+          Ad-talent Award</h3>
+          <p>
+            jaarlijks wordt door het Overlegplatform de Ad Talent Award uitgereikt, waarmee 2 Associate degree-talenten
+            verkozen worden.
+          </p>
+          <a class="light-button"  href="#todo">Meer over Talent Awards </a>
+        </article>
+        </div>
+      </section>
+
+
+      <section class="section-list">
+        <h2> <svg width='108' height='69' viewBox='0 0 108 69' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M41.5662 33.7171C46.8967 42.9497 44.0736 54.559 35.2606 59.6471C26.4476 64.7353 14.9821 61.3756 9.65165 52.1429C4.32119 42.9103 7.14432 31.301 15.9573 26.2128C24.7702 21.1247 36.2358 24.4844 41.5662 33.7171Z' fill='#00408D'/><path d='M97.2177 18.2368C103.033 28.3088 99.5818 41.1878 89.5099 47.0028C79.4379 52.8179 66.559 49.367 60.7439 39.295C54.9289 29.223 58.3798 16.3441 68.4517 10.529C78.5237 4.71398 91.4027 8.16489 97.2177 18.2368Z' fill='#E75234'/></svg> Waarom kiezen voor een Associate degree?</h2>
+        <p>
+          Een Associate degree combineert praktijkgericht onderwijs met doorstroommogelijkheden, zodat je snel ervaring
+          opdoet én een diploma haalt.
+        </p>
+        <ul>
+          <li>Praktijkgericht leren en direct vaardigheden toepassen</li>
+          <li>Korte studieduur van 2 jaar</li>
+          <li>Doorstromen naar een bacheloropleiding mogelijk</li>
+        </ul>
+        <a class="dark-button"  href="#todo">Meer over Associate degrees</a>
+      </section>
+    </main>
+
+       {% render 'partials/foot.liquid'%}
