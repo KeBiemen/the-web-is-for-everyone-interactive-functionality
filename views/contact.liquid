@@ -1,0 +1,39 @@
+{% render 'partials/head.liquid' %}
+
+{% render 'partials/header.liquid' %}
+
+<h1>Vragen? Neem contact op</h1>
+
+<section>
+  <h2>Contactformulier</h2>
+  <form action="/contact" method="POST">
+    <label>
+      Naam + Achternaam
+      <input
+        type="text"
+        name="name"
+        required
+      >
+    </label>
+
+    <label>
+      E-mailadres
+      <input
+        type="email"
+        name="email"
+        required
+      >
+    </label>
+
+    <label>
+      Jouw vraag
+      <textarea
+        name="message"
+        placeholder="Beste Overlegplatform Ad's, ik heb een vraag over.."
+        required
+      
+      ></textarea>
+    </label>
+    <button type="submit">Formulier verzenden</button>
+  </form>
+</section>
