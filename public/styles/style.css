@@ -1,0 +1,133 @@
+/* STIJLGUIDE — Overlegplatform Ad's */
+
+:root {
+ /* Primary */
+--color-primary-100: hsl(213, 100%, 88%);
+  --color-primary-200: hsl(213, 100%, 78%);
+  --color-primary-300: hsl(213, 100%, 68%);
+  --color-primary-400: hsl(213, 23%, 58%);
+  --color-primary-500: hsl(213, 100%, 48%);
+  --color-primary-600: hsl(213, 100%, 38%);
+  --color-primary-700: hsl(213, 100%, 28%);
+  --color-primary-800: hsl(213, 100%, 18%);
+  --color-primary-900: hsl(213, 100%, 15%);
+  --color-primary-950: hsl(213, 100%, 8%);
+
+  /* Accent */
+  --color-accent-100: hsl(10, 90%, 85%);
+  --color-accent-200: hsl(10, 90%, 75%);
+  --color-accent-300: hsl(10, 90%, 65%);
+  --color-accent-400: hsl(10, 79%, 55%);
+  --color-accent-500: hsl(10, 79%, 45%);
+
+  /* Neutral */
+  --color-neutral-100: hsl(0, 0%, 98%);
+  --color-neutral-200: hsl(213, 8%, 84%);
+  --color-neutral-300: hsl(212, 18%, 69%);
+  --color-neutral-400: hsl(213, 19%, 36%);
+  --color-neutral-500: hsl(213, 20%, 33%);
+  --color-neutral-600: hsl(213, 23%, 18%);
+  --color-neutral-700: hsl(213, 22%, 12%);
+  --color-neutral-800: hsl(213, 21%, 9%);
+
+
+  /* TYPOGRAFIE */
+  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --line: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+    text-align: center;
+}
+
+/* header */
+
+.header-1 {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: center;
+  justify-content: flex-end;
+  z-index: 99;
+  background-color: var(--color-primary-100);
+}
+
+.header-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 2.8em;
+  align-items: center;
+  background-color: var(--color-neutral-100);
+  padding: 1em;
+}
+
+nav {
+  margin-right: 3em;
+}
+
+.nav-2 {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  justify-content: flex-end;
+}
+
+.ul-header {
+    list-style: none;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding-right: 1em;
+}
+
+
+
+.svg-header {
+  justify-self: start;
+  height: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-neutral-800);
+}
+
+
+
+/* herosection */
+
+h1{ font-size:clamp(1rem, 8vw, 3.4rem);}
+
+.hero-section {
+  background-color: var(--color-primary-100);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  padding: 3em 0 0 3em;
+}
+
+.hero-aricle  {
+  grid-column-start: 1;
+  padding-bottom: 2em;
+  width: 90vw;
+  width: 90dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-image {
+  grid-column-start: 2;
+  border-radius: 1em 1em 0 0;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  padding-right: 1em;
+}
+
