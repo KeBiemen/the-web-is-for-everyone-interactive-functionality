@@ -1,45 +1,8 @@
-/* STIJLGUIDE — Overlegplatform Ad's */
-
-:root {
-  /* Primary */
-  --color-primary-100: hsl(213, 100%, 88%);
-  --color-primary-200: hsl(213, 100%, 78%);
-  --color-primary-300: hsl(213, 100%, 68%);
-  --color-primary-400: hsl(213, 23%, 58%);
-  --color-primary-500: hsl(213, 100%, 48%);
-  --color-primary-600: hsl(213, 100%, 38%);
-  --color-primary-700: hsl(213, 100%, 28%);
-  --color-primary-800: hsl(213, 100%, 18%);
-  --color-primary-900: hsl(213, 100%, 15%);
-  --color-primary-950: hsl(213, 100%, 8%);
-
-  /* Accent */
-  --color-accent-100: hsl(10, 90%, 85%);
-  --color-accent-200: hsl(10, 90%, 75%);
-  --color-accent-300: hsl(10, 90%, 65%);
-  --color-accent-400: hsl(10, 79%, 55%);
-  --color-accent-500: hsl(10, 79%, 45%);
-
-  /* Neutral */
-  --color-neutral-100: hsl(0, 0%, 98%);
-  --color-neutral-200: hsl(213, 8%, 84%);
-  --color-neutral-300: hsl(212, 18%, 69%);
-  --color-neutral-400: hsl(213, 19%, 36%);
-  --color-neutral-500: hsl(213, 20%, 33%);
-  --color-neutral-600: hsl(213, 23%, 18%);
-  --color-neutral-700: hsl(213, 22%, 12%);
-  --color-neutral-800: hsl(213, 21%, 9%);
-
-  /* TYPOGRAFIE */
-  --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  --line: 1.6;
-}
 
 body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
-  text-align: center;
 }
 
 /* header */
@@ -129,21 +92,48 @@ h1 {
 }
 
 /* contactfromulier */
+.contact-body{
+ background-color: var(--color-primary-100); 
+
+}
+
+.contact-section{
+box-sizing: border-box;
+width: 100%;
+padding: 3em 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
 form {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;
-  align-self: center;
-}
 
-.form-section {
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+ 
+}}
+
+.form-article {
+align-self: center;
+background-color: var(--color-neutral-100);
+justify-self: center;
   border: 2px solid var(--color-neutral-300);
   max-width: 20em;
   padding: 2em;
   margin: 2em;
   border-radius: 1em;
-}
+
+   @media (min-width: 768px) {
+   max-width: 30em;
+ 
+}}
 
 input {
   padding: 1em;
@@ -151,26 +141,41 @@ input {
   background-color: var(--color-neutral-100);
   appearance: none;
   caret-color: var(--color-primary-500);
-  transition: 0.3s;
+  background-color: var(--color-neutral-200);
 
   &:valid {
-    border-color: green;
+border: solid 2px green;
   }
 
   &:user-invalid {
-    border-color: red;
+ border: solid 2px red;
   }
-}
+
+@media (min-width: 768px) {
+ width: 15em;
+
+}}
+
 
 textarea {
   padding: 1em;
   border-radius: 1em;
-  background-color: var(--color-neutral-100);
-}
+    height: 7em;
+ background-color: var(--color-neutral-200);
+
+ @media (min-width: 768px) {
+  width: 35em;
+
+}}
 
 label {
   display: grid;
-}
+
+  @media (min-width: 768px) {
+ width: 15em;
+
+}}
+
 
 .form-button {
   max-width: 15em;
@@ -180,4 +185,11 @@ label {
   padding: 1em;
   border-radius: 1em;
   align-self: center;
-}
+
+   @media (min-width: 768px) {
+    grid-row-start: 3; 
+ 
+}}
+
+
+

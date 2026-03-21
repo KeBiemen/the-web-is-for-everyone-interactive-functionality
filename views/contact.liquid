@@ -1,15 +1,30 @@
-{% render 'partials/head.liquid' %}
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styleguide.css">
+   
+    <title>Adconnect</title>
+  </head>
+  <body class="contact-body">
 
 {% render 'partials/header.liquid' %}
 
-<h1>Vragen? Neem contact op</h1>
 
-<section class="form-section">
+
+<section class="contact-section">
+<h1>Vragen? Neem contact op</h1>
+<p>Heb je vragen of wil je meer weten over Associate Degrees neem dan via het onderstaande formulier contact met ons op.</p>
+
+<article class="form-article">
   <h2>Contactformulier</h2>
   <form action="/contact" method="POST">
     <label>
       Naam + Achternaam
       <input
+        class="focus-visible"
         type="text"
         name="name"
         required
@@ -19,9 +34,11 @@
     <label>
       E-mailadres
       <input
+        class="focus-visible"
         type="email"
         name="email"
         required
+     
       >
     </label>
 
@@ -34,6 +51,7 @@
       
       ></textarea>
     </label>
-    <button class="form-button" type="submit">Formulier verzenden</button>
+    <button class="form-button focus-visible" type="submit">Formulier verzenden</button>
   </form>
+</article>
 </section>
