@@ -40,8 +40,11 @@ app.get("/", async function (request, response) {
   // Laat de data zien in de terminal
   console.log(apiResponseJSON);
 
+  console.log("-------------");
   // Pak alleen de array met nieuwsitems uit de JSON
   const news = apiResponseJSON.data;
+
+  console.log(news);
 
   // Render index.liquid en geef news mee
   response.render("index.liquid", { news: news });
@@ -67,6 +70,7 @@ app.get("/contact", async function (request, response) {
   response.render("contact.liquid");
 });
 
+// wat wordt verstuurd naar de directus. name, email message. 
 app.post("/contact", async function (request, response) {
   await fetch("https://fdnd-agency.directus.app/items/adconnect_contact", {
     method: "POST",
@@ -80,7 +84,7 @@ app.post("/contact", async function (request, response) {
       "Content-Type": "application/json;charset=UTF-8",
     },
   });
-
+// na het laden gaat ie weer naar de contact pagina, de / kan worden veranderd. 
   response.redirect('/contact')
   // response.render('contact.liquid')
 });
