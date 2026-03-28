@@ -38,33 +38,33 @@ app.get("/", async function (request, response) {
   const apiResponseJSON = await apiResponse.json();
 
   // Laat de data zien in de terminal
-  console.log(apiResponseJSON);
+  // console.log(apiResponseJSON);
 
-  console.log("-------------");
+  // console.log("-------------");
   // Pak alleen de array met nieuwsitems uit de JSON
   const news = apiResponseJSON.data;
 
-  console.log(news);
+  // console.log(news);
 
   // Render index.liquid en geef news mee
   response.render("index.liquid", { news: news });
 });
 
-app.get("/talent-award", async function (request, response) {
-  // Haal de genomineerden op uit de database
-  const apiResponse = await fetch(
-    "https://fdnd-agency.directus.app/items/adconnect_nominations",
-  );
+// app.get("/talent-award", async function (request, response) {
+//   // Haal de genomineerden op uit de database
+//   const apiResponse = await fetch(
+//     "https://fdnd-agency.directus.app/items/adconnect_nominations",
+//   );
 
-  // Zet de opgehaalde data om naar JSON
-  const apiResponseJSON = await apiResponse.json();
+//   // Zet de opgehaalde data om naar JSON
+//   const apiResponseJSON = await apiResponse.json();
 
-  // Pak alleen de array met genomineerden uit de JSON
-  const nominees = apiResponseJSON.data;
+//   // Pak alleen de array met genomineerden uit de JSON
+//   const nominees = apiResponseJSON.data;
 
-  // Render de pagina en geef nominees mee
-  response.render("talent-award.liquid", { nominees: nominees });
-});
+//   // Render de pagina en geef nominees mee
+//   response.render("talent-award.liquid", { nominees: nominees });
+// });
 
 app.get("/contact", async function (request, response) {
   response.render("contact.liquid");
