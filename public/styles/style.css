@@ -318,16 +318,22 @@ grid-template-columns: 1fr;
   border-radius: 1em;
 }
 
+.lado-wrapper{
+background-color: var(--color-primary-600);
+padding: 1em;
+}
+
 .overzicht-lado {
+  margin: 5em;
+  max-width: 90em;
   background-color: #fff;
   border-radius: 16px;
-  padding: 2.5em;
+  padding: 3em;
 }
 
 /* Details */
 details {
   border-bottom: 1px solid #f8eeff;
-
   padding: 1.5em 0 0 0;
 }
 
