@@ -30,6 +30,8 @@
   --color-neutral-700: hsl(213, 22%, 12%);
   --color-neutral-800: hsl(213, 21%, 9%);
 
+  /* hsl is widely available */
+  
   /* TYPOGRAFIE */
   --font: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   --line: 1.6;
