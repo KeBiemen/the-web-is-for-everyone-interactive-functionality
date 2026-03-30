@@ -318,4 +318,43 @@ grid-template-columns: 1fr;
   border-radius: 1em;
 }
 
+.overzicht-lado {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2.5em;
+}
 
+/* Details */
+details {
+  border-bottom: 1px solid #f8eeff;
+
+  padding: 1.5em 0 0 0;
+}
+
+/* Summary  */
+summary {
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    color: hsl(213, 100%, 38%);
+  }
+}
+
+table {
+  border: 1px solid #00408f;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: left;
+  margin: 1em;
+
+  & th {
+    background: hsl(213, 100%, 38%);
+    color: white;
+    padding: 0.5em;
+  }
+
+  & td {
+    border: 1px solid #00408f;
+    padding: 5px;
+  }
+}
