@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font);
+  background-color: var(--color-neutral-100);
+  color: var(--color-neutral-800);
 }
 
 /* header */
@@ -68,6 +70,7 @@ a {
   flex-direction: column;
   gap: 2rem;
   align-items: center;
+   color: var(--color-neutral-800);
 
   @media (min-width: 1430px) {
     flex-direction: row;
@@ -82,6 +85,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+ 
+
 }
 
 .hero-image {
@@ -94,7 +99,7 @@ a {
 }
 
 .event-button {
-  color: var(--color-primary-600);
+  color: var(--color-neutral-800);
   border: solid 3px var(--color-primary-600);
   border-radius: 0.5em;
   padding: 0.5em;
@@ -301,12 +306,12 @@ label {
   color: var(--color-neutral-100);
 }
 
-.lado-info{
-display: grid;
-grid-template-columns: 1fr;
+.lado-info {
+  display: grid;
+  grid-template-columns: 1fr;
 
- @media (min-width: 768px) {
-    grid-template-columns:  1fr 1fr;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -318,9 +323,9 @@ grid-template-columns: 1fr;
   border-radius: 1em;
 }
 
-.lado-wrapper{
-background-color: var(--color-primary-600);
-padding: 1em;
+.lado-wrapper {
+  background-color: var(--color-primary-600);
+  padding: 1em;
 }
 
 .overzicht-lado {
@@ -342,25 +347,25 @@ summary {
   font-weight: 700;
   cursor: pointer;
   &:hover {
-    color: hsl(213, 100%, 38%);
+    color: var(--color-primary-600);
   }
 }
 
 table {
-  border: 1px solid #00408f;
+  border: 1px solid var(--color-primary-600);
   table-layout: fixed;
   border-collapse: collapse;
   text-align: left;
   margin: 1em;
 
   & th {
-    background: hsl(213, 100%, 38%);
+    background: var(--color-primary-600);
     color: white;
     padding: 0.5em;
   }
 
   & td {
-    border: 1px solid #00408f;
+    border: 1px solid var(--color-primary-600);
     padding: 5px;
   }
 }
