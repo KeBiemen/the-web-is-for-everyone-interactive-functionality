@@ -39,7 +39,9 @@ en groen wanneer het correct is
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? Misschien heb je iets met NodeJS gedaan, of heb je een framework of library gebruikt? -->
-Dit project is gemaakt met liquid en nodejs. er is gebruik gemaakt van partials. de data die is opgehaald gaat over het nieuws die te zien is op de homepagina. en de post interactie staat in de contact-pagina
+Dit project is gemaakt met liquid en nodejs. er is gebruik gemaakt van partials. de data die is opgehaald gaat over het nieuws die te zien is op de homepagina. en de post interactie staat in de contact-pagina. 
+
+progressive enhancement is toegepast door baseline code te gebruiken die vooral widely available zijn.
 ## Installatie
 <!-- Bij Installatie staat hoe een andere developer aan jouw repo kan werken -->
 Om dit project op te starten volg je deze stappen
